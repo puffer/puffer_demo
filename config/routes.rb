@@ -6,6 +6,7 @@ PufferDemo::Application.routes.draw do
     resources :pages
     resources :layouts
     resources :snippets
+    resources :users
   end
 
   namespace :puffer do
