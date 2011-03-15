@@ -1,5 +1,7 @@
 PufferDemo::Application.routes.draw do
 
+  match '/admin' => 'puffer/dashboard#index', :as => :admin
+
   namespace :admin do
     resources :pages
     resources :layouts
@@ -10,7 +12,5 @@ PufferDemo::Application.routes.draw do
     root :to => 'dashboard#index'
     resource :session
   end
-
-  root :to => 'pages#index', :defaults => {:path => 'servise'}
 
 end
