@@ -1,0 +1,14 @@
+.bundle
+config/database.yml
+db/*.sqlite3
+log/
+tmp/
+public/assets
+public/uploads
+public/system
+.project
+*.tar
+*.sh
+*.txt
+*.orig
+
