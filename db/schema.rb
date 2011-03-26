@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101209110443) do
+ActiveRecord::Schema.define(:version => 20110326205824) do
 
   create_table "layouts", :force => true do |t|
     t.string   "name"
@@ -51,6 +51,14 @@ ActiveRecord::Schema.define(:version => 20101209110443) do
 
   add_index "pages", ["location"], :name => "index_pages_on_location"
   add_index "pages", ["slug"], :name => "index_pages_on_slug"
+
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "snippets", :force => true do |t|
     t.string   "name"
