@@ -1,1 +1,1 @@
-rvm gemset use puffer_demo
+rvm use 1.9.2@puffer_demo --create

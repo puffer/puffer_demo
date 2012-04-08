@@ -1,3 +1,4 @@
+# This migration comes from puffer_pages_engine (originally 20090506102004)
 class CreateLayouts < ActiveRecord::Migration
   def self.up
     create_table :layouts do |t|

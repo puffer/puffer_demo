@@ -1,3 +1,4 @@
+# This migration comes from puffer_pages_engine (originally 20090504132337)
 class CreatePageParts < ActiveRecord::Migration
   def self.up
     create_table :page_parts do |t|

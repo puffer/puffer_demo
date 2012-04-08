@@ -1,3 +1,4 @@
+# This migration comes from puffer_pages_engine (originally 20090510121824)
 class CreateSnippets < ActiveRecord::Migration
   def self.up
     create_table :snippets do |t|
